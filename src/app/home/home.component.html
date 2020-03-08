@@ -1,0 +1,30 @@
+<div class="main-div">
+    <mat-card class="card-content">{{ jokeStr }}</mat-card>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="sub-div">
+    <button
+      mat-mini-fab
+      aria-label="Example icon-button with a heart icon"
+      (click)="tweetJoke()"
+    >
+      <mat-icon>share</mat-icon>
+    </button>
+    &nbsp;
+    <button
+      mat-fab
+      aria-label="Example icon-button with a heart icon"
+      (click)="getJoke()"
+    >
+      <mat-icon>navigate_next</mat-icon>
+    </button>
+  
+    &nbsp;
+    <button
+      mat-mini-fab
+      aria-label="Example icon-button with a heart icon"
+      (click)="copyToClipBoard()"
+    >
+      <mat-icon>file_copy</mat-icon>
+    </button>
+  </div>
